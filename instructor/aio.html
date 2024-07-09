@@ -40,12 +40,12 @@
           </a>
           <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught.</span>
         </abbr>
-        
+
       </div>
     </div>
     <div class="selector-container">
-      
-      
+
+
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
           <i aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View <i data-feather="chevron-down"></i>
@@ -150,7 +150,7 @@
                         <!--div.sidenav-view-selector -->
                     </div>
                     <!--/div.col -->
-                    
+
                     <hr>
 </div>
                 <!--/div.mobile-row -->
@@ -170,7 +170,7 @@
         <a href="index.html">Summary and Schedule</a>
     </div>
 <!--/div.accordion-header-->
-        
+
   </div>
 <!--/div.accordion-item-->
 </div>
@@ -182,7 +182,7 @@
         <a href="Machine_Learning_Part1.html">1. Separating Mouse and Human Antibody Sequences using Protein Encoding and Machine Learning Classifiers</a>
     </div>
 <!--/div.accordion-header-->
-        
+
   </div>
 <!--/div.accordion-item-->
 </div>
@@ -190,7 +190,7 @@
 </div>
                         </div>
                     </div>
-                     
+
                     <hr class="half-width">
 <div class="accordion accordion-flush resources" id="accordionFlush12">
                         <div class="accordion-item">
@@ -220,10 +220,10 @@
                     </div>
                     <hr class="half-width resources">
 <a href="../instructor/aio.html">See all in one page</a>
-                    
+
                     <br><hr class="d-none d-sm-block d-md-none">
 <div class="d-grid gap-1">
-                        
+
                     </div>
                 </div>
                 <!-- /div.accordion -->
@@ -244,7 +244,7 @@
 <section id="aio-Machine_Learning_Part1"><p>Content from <a href="Machine_Learning_Part1.html">Separating Mouse and Human Antibody Sequences using Protein Encoding and Machine Learning Classifiers</a></p>
 <hr>
 <p>Last updated on 2024-07-02 |
-        
+
         <a href="https://github.com/LearnToDiscover/case-study-antibodies/edit/main/episodes/Machine_Learning_Part1.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
@@ -281,7 +281,8 @@ dataset</li>
 </div>
 </div>
 </div>
-<section id="introduction"><h2 class="section-heading">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <hr class="half-width">
 <p>If we want to generate a classifier that observes the differences
@@ -314,7 +315,8 @@ from an input of Fasta formatted sequences. Secondly, we will split
 those encodings into training and test datasets for a selection of
 machine learning classifiers and plot our results, comparing both
 methods of encodings.</p>
-</section><section id="references"><h2 class="section-heading">References<a class="anchor" aria-label="anchor" href="#references"></a>
+</section><section><h2 class="section-heading" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
+<a class="anchor" aria-label="anchor" href="#references"></a>
 </h2>
 <hr class="half-width">
 <p>ElAbd, H., Bromberg, Y., Hoarfrost, A., Lenz, T., Franke, A., &amp;
@@ -335,7 +337,8 @@ specific, and natively paired antibodies. Communications Biology, 1(1),
 <p>Sequeira, A. M., Lousa, D., &amp; Rocha, M. (2022). ProPythia: A
 Python package for protein classification based on machine and deep
 learning. Neurocomputing, 484, 172–182. <a href="https://doi.org/https://doi.org/10.1016/j.neucom.2021.07.102" class="external-link uri">https://doi.org/https://doi.org/10.1016/j.neucom.2021.07.102</a></p>
-</section><section id="imports-and-requirements"><h2 class="section-heading">Imports and Requirements<a class="anchor" aria-label="anchor" href="#imports-and-requirements"></a>
+</section><section><h2 class="section-heading" id="imports-and-requirements">Imports and Requirements<a class="anchor" aria-label="anchor" href="#imports-and-requirements"></a>
+<a class="anchor" aria-label="anchor" href="#imports-and-requirements"></a>
 </h2>
 <hr class="half-width">
 <p>The antibody encoding method we will be using is the Propythia
@@ -423,7 +426,8 @@ what imports are required at what stage of the process.</p>
 <span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a>    <span class="st">'QDA'</span>:QuadraticDiscriminantAnalysis(),</span>
 <span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a>}</span></code></pre>
 </div>
-</section><section id="generating-the-encoded-dataset"><h2 class="section-heading">Generating the Encoded Dataset<a class="anchor" aria-label="anchor" href="#generating-the-encoded-dataset"></a>
+</section><section><h2 class="section-heading" id="generating-the-encoded-dataset">Generating the Encoded Dataset<a class="anchor" aria-label="anchor" href="#generating-the-encoded-dataset"></a>
+<a class="anchor" aria-label="anchor" href="#generating-the-encoded-dataset"></a>
 </h2>
 <hr class="half-width">
 <p>Here we input our fasta file and split the entries into VH and VL
@@ -544,7 +548,8 @@ necessary.</p>
 </h3>
 <pre class="output" tabindex="0"><code>Training set size:  (1400, 1780)        Test set size:  (600, 1780)</code></pre>
 </div>
-</section><section id="separating-our-data-with-machine-learning-classifiers"><h2 class="section-heading">Separating our data with Machine Learning Classifiers<a class="anchor" aria-label="anchor" href="#separating-our-data-with-machine-learning-classifiers"></a>
+</section><section><h2 class="section-heading" id="separating-our-data-with-machine-learning-classifiers">Separating our data with Machine Learning Classifiers<a class="anchor" aria-label="anchor" href="#separating-our-data-with-machine-learning-classifiers"></a>
+<a class="anchor" aria-label="anchor" href="#separating-our-data-with-machine-learning-classifiers"></a>
 </h2>
 <hr class="half-width">
 <p>Here is our list of classifiers that we will loop through to see
@@ -887,9 +892,9 @@ multiple encoding methods to find which works the best</li>
 </div>
 </div>
 </div>
-<!-- 
+<!--
 Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use. 
+any links that you are not going to use.
  -->
 </div>
 </section></section>
@@ -926,8 +931,8 @@ any links that you are not going to use.
   "url": "https://LearnToDiscover.github.io/case-study-antibodies/instructor/aio.html",
   "identifier": "https://LearnToDiscover.github.io/case-study-antibodies/instructor/aio.html",
   "dateCreated": "2024-03-04",
-  "dateModified": "2024-07-02",
-  "datePublished": "2024-07-02"
+  "dateModified": "2024-07-09",
+  "datePublished": "2024-07-09"
 }
 
   </script><script>
