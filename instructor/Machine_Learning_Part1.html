@@ -306,8 +306,7 @@ dataset</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
-<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
+<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a></h2>
 <hr class="half-width"><p>If we want to generate a classifier that observes the differences
 between two groups of protein seequences, then we need to extract
 numerical information from our sequences. This is called encoding and
@@ -338,8 +337,7 @@ from an input of Fasta formatted sequences. Secondly, we will split
 those encodings into training and test datasets for a selection of
 machine learning classifiers and plot our results, comparing both
 methods of encodings.</p>
-</section><section><h2 class="section-heading" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
-<a class="anchor" aria-label="anchor" href="#references"></a></h2>
+</section><section><h2 class="section-heading" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a></h2>
 <hr class="half-width"><p>ElAbd, H., Bromberg, Y., Hoarfrost, A., Lenz, T., Franke, A., &amp;
 Wendorff, M. (2020). Amino acid encoding for deep learning applications.
 BMC Bioinformatics, 21(1), 235. <a href="https://doi.org/10.1186/s12859-020-03546-x" class="external-link uri">https://doi.org/10.1186/s12859-020-03546-x</a></p>
@@ -358,8 +356,7 @@ specific, and natively paired antibodies. Communications Biology, 1(1),
 <p>Sequeira, A. M., Lousa, D., &amp; Rocha, M. (2022). ProPythia: A
 Python package for protein classification based on machine and deep
 learning. Neurocomputing, 484, 172–182. <a href="https://doi.org/https://doi.org/10.1016/j.neucom.2021.07.102" class="external-link uri">https://doi.org/https://doi.org/10.1016/j.neucom.2021.07.102</a></p>
-</section><section><h2 class="section-heading" id="imports-and-requirements">Imports and Requirements<a class="anchor" aria-label="anchor" href="#imports-and-requirements"></a>
-<a class="anchor" aria-label="anchor" href="#imports-and-requirements"></a></h2>
+</section><section><h2 class="section-heading" id="imports-and-requirements">Imports and Requirements<a class="anchor" aria-label="anchor" href="#imports-and-requirements"></a></h2>
 <hr class="half-width"><p>The antibody encoding method we will be using is the Propythia
 program. Before starting we recommend installing it by copying and
 pasting the following command in your terminal/command line:</p>
@@ -445,8 +442,7 @@ what imports are required at what stage of the process.</p>
 <span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a>    <span class="st">'QDA'</span>:QuadraticDiscriminantAnalysis(),</span>
 <span id="cb2-19"><a href="#cb2-19" tabindex="-1"></a>}</span></code></pre>
 </div>
-</section><section><h2 class="section-heading" id="generating-the-encoded-dataset">Generating the Encoded Dataset<a class="anchor" aria-label="anchor" href="#generating-the-encoded-dataset"></a>
-<a class="anchor" aria-label="anchor" href="#generating-the-encoded-dataset"></a></h2>
+</section><section><h2 class="section-heading" id="generating-the-encoded-dataset">Generating the Encoded Dataset<a class="anchor" aria-label="anchor" href="#generating-the-encoded-dataset"></a></h2>
 <hr class="half-width"><p>Here we input our fasta file and split the entries into VH and VL
 sequences. We put each set of sequecnes through the Propythia encoder a
 dataframe of numerical information for both VH and VL sequences. There
@@ -565,8 +561,7 @@ necessary.</p>
 </h3>
 <pre class="output" tabindex="0"><code>Training set size:  (1400, 1780)        Test set size:  (600, 1780)</code></pre>
 </div>
-</section><section><h2 class="section-heading" id="separating-our-data-with-machine-learning-classifiers">Separating our data with Machine Learning Classifiers<a class="anchor" aria-label="anchor" href="#separating-our-data-with-machine-learning-classifiers"></a>
-<a class="anchor" aria-label="anchor" href="#separating-our-data-with-machine-learning-classifiers"></a></h2>
+</section><section><h2 class="section-heading" id="separating-our-data-with-machine-learning-classifiers">Separating our data with Machine Learning Classifiers<a class="anchor" aria-label="anchor" href="#separating-our-data-with-machine-learning-classifiers"></a></h2>
 <hr class="half-width"><p>Here is our list of classifiers that we will loop through to see
 which is the best at clustering our dataset:</p>
 <p>Now loop over our classifiers and use the test and train datasets to
@@ -830,8 +825,7 @@ with negative MCC scores.</p>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="questions" class="callout-inner">
-<h3 class="callout-title">Questions<a class="anchor" aria-label="anchor" href="#questions"></a>
-</h3>
+<h3 class="callout-title">Questions</h3>
 <div class="callout-content">
 <ul><li>Which encoding method produced overall the best results? Why could
 this be? Hint: think of the size of both sets of encodings</li>
@@ -845,8 +839,7 @@ encodings?</li>
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="end-of-chapter-exercise-testing-our-classifiers-on-a-naïve-dataset" class="callout-inner">
-<h3 class="callout-title">End of Chapter Exercise: Testing our Classifiers on a Naïve Dataset<a class="anchor" aria-label="anchor" href="#end-of-chapter-exercise-testing-our-classifiers-on-a-na%C3%AFve-dataset"></a>
-</h3>
+<h3 class="callout-title">End of Chapter Exercise: Testing our Classifiers on a Naïve Dataset</h3>
 <div class="callout-content">
 <p>We have seen that it is possible to separate mouse and human antibody
 protein sequences through their numerical encodings.</p>
@@ -874,8 +867,7 @@ be expanded upon in the next Notebook.</li>
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
-</h3>
+<h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
 <ul><li>Protein sequences must be numerically encoded to be readable by
 machine learning algorithms.</li>
@@ -911,7 +903,7 @@ any links that you are not going to use.
       </div><!--/div.row-->
       		<footer class="row footer mx-md-3"><hr><div class="col-md-6">
         <p>Template licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> by <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/LearnToDiscover/sandpaper/tree/l2d" class="external-link">sandpaper (0.16.5.90000.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/ad2542f7f7b9c3f90cc871b355ff81ec14a09ca9" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/LearnToDiscover/varnish/tree/ef687d476fd8ae2bb8eb288a25e69130004f4f7b" class="external-link">varnish (1.0.3.9000.1)</a></p>
+        <p>Built with <a href="https://github.com/LearnToDiscover/sandpaper/tree/l2d" class="external-link">sandpaper (0.16.6.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/ad2542f7f7b9c3f90cc871b355ff81ec14a09ca9" class="external-link">pegboard (0.7.6)</a>, and <a href="https://github.com/LearnToDiscover/varnish/tree/ef687d476fd8ae2bb8eb288a25e69130004f4f7b" class="external-link">varnish (1.0.3.9000.1)</a></p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -934,7 +926,7 @@ any links that you are not going to use.
   "identifier": "https://LearnToDiscover.github.io/case-study-antibodies/instructor/Machine_Learning_Part1.html",
   "dateCreated": "2024-03-04",
   "dateModified": "2024-07-02",
-  "datePublished": "2024-09-03"
+  "datePublished": "2024-09-10"
 }
 
   </script><script>
